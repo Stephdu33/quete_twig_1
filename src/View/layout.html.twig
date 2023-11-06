@@ -1,4 +1,5 @@
 {# layout.html.twig #}
+
 <!doctype html>
 <html lang="fr">
 <head>
@@ -13,11 +14,9 @@
 </head>
 
 <body>
-{% extends '_navbar.html.twig' %}
-<footer>
-    <p>
-{% extends '_footer.html.twig' %}
-    </p>
-</footer>
+{% block content %}
+{% include '_navbar.html.twig' %}
+{% include '_footer.html.twig' %}
+{% endblock %}
 </body>
 </html>
